@@ -24,6 +24,7 @@ gem 'turbolinks', '~> 5'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+gem 'cloudinary', '~> 1.16.0'
 
 #gem front end
 gem "autoprefixer-rails", "10.2.5"
