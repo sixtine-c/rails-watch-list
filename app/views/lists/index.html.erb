@@ -1,0 +1,26 @@
+
+<div class="banner-list" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/J39X2xX_8CQ)">
+  <h1>Save any Kind of movies </h1>
+</div>
+
+<div class="container">
+
+  <div class="container-add-list d-flex justify-content-end">
+    <%= link_to "add a list ", new_list_path(@list), class:"btn btn-flat m-3" %>
+  </div>
+
+  <h3>My lists</h3>
+    <div class="cards mt-4 ">
+      <% @lists.each do |list| %>
+        <%= link_to list_path(list), class: "link-card-category" do %>
+        <div class="list-card-category d-flex justify-content-center">
+
+          <div class="card-text d-flex align-self-center ">
+            <%= list.name%>
+          </div>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+
+</div>
