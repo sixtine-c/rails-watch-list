@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts 'reinitializing the data'
+Bookmark.destroy_all
 Movie.destroy_all
-
 
 puts 'adding movies'
 require 'json'
